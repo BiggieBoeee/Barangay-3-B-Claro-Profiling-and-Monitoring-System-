@@ -172,41 +172,46 @@
   <div class="jumbotron">
     <div class="col-lg-12"> 
     
-  <img style="float:center"src="C:\Users\BOE\Documents\a\Chris-Brown-827x620.jpg"  class="img-thumbnail" alt="Trulli" width="250" height="250"> 
+  <img style="float:center"src="C:\Users\BOE\Desktop\boots\startbootstrap-sb-admin-gh-pages\person.png"  class="img-thumbnail" alt="Trulli" width="250" height="250"> 
 <br>
 <br>
-  <div class="form-group row">
+  
+    <form name="registration" action="insert.php" method="post">
 <p>
-  Resident ID: <input type="text">
+  Resident ID: <input name="resident_ID" type="text">
 
-  Contact No.: <input name="Contactno" type="text">
+  Contact No.: <input name="contact_no" type="text">
 </div>
   </p>
      </p>                                
     <div class="form-group row">
       <div class="col-lg-4">
         <label for="ex1">Last Name</label>
-        <input name="Lname" class="form-control" id="ex1" type="text">
+        <input name="last_name" class="form-control" id="ex1" type="text">
       </div>
       <div class="col-lg-4">
         <label for="ex2">First Name</label>
-        <input name="Fname" class="form-control" id="ex2" type="text">
+        <input name="first_name" class="form-control" id="ex2" type="text">
       </div>
       <div class="col-lg-4">
         <label for="ex3">Middle Initial</label>
-        <input name="Minit" class="form-control" id="ex3" type="text">
+        <input name="middle_name" class="form-control" id="ex3" type="text">
       </div>
     <div class="col-lg-4">
         <label>Gender:</label><br>
-        <input type="radio" name="gender" value="male" checked> Male<br></br>
-        <input type="radio" name="gender" value="female"> Female<br></br>
-
-         
+        <input type="radio" name="gender" value="m" checked> Male<br></br>
+        <input type="radio" name="gender" value="f"> Female<br></br>
     </div>
+    <div class="col-lg-12">
+  <br>
+  <form action="/action_page.php">
+        Birthdate: <input type="date" name="birth_date">
+
+</div><br>
 <br>
    <div class="col-lg-12">
         <label for="ex3">Home Address</label>
-        <input name="Haddress" class="form-control" id="ex3" type="text">
+        <input name="address" class="form-control" id="ex3" type="text">
    </div>
 <div class="col-lg-12">
         <label for="ex3">Birth Place</label>
@@ -218,35 +223,43 @@
 
 <div class="container">
 
-</form>
+
 
  <div class="form-group row">
       <div class="col-lg-4">
         <label for="ex1">Religion</label>
-        <input name="Religion" class="form-control" id="ex2" type="text">
+        <input name="religion" class="form-control" id="ex2" type="text">
       </div>
       <div class="col-lg-4">
         <label for="ex2">Civil Status</label>
-        <input name="Civilstatus" class="form-control" id="ex2" type="text">
+        <input name="civil_status" class="form-control" id="ex2" type="text">
       </div>
       
       <div class="col-lg-4">
         <label for="ex2">Educational Attainment</label>
-        <input name="Educattain" class="form-control" id="ex2" type="text">
+        <input name="educ_attain" class="form-control" id="ex2" type="text">
       </div>
       <div class="col-lg-8">
         <label for="ex3">Email Adress:</label>
-        <input name="Emailadd" class="form-control" id="ex3" type="text">
+        <input name="email_add" class="form-control" id="ex3" type="text">
    </div>
    <div class="col-lg-4">
         <label for="ex2">Occupation</label>
-        <input name="Occupation" class="form-control" id="ex2" type="text">
+        <input name="occupation" class="form-control" id="ex2" type="text">
       </div>
       <div class="col-lg-4">
         <label for="ex2">Citizenship</label>
-        <input name="Citizenship" class="form-control" id="ex2" type="text">
-         
-          
+        <input name="citizenship" class="form-control" id="ex2" type="text">
+        <br><br>
+        
+  </form>
+      </form>
+    </div>
+<div>
+
+    
+         </tr></div></div>
+          <input type="submit" name='submit' value="submit">
       </div>
     </div>
   </form>
@@ -255,40 +268,15 @@
           </ol>
 
 <div class="container">
-    
+    <button type="button" class="btn btn-Warning btn-lg"><a href="Maintenance.html">Back to Maintenance</a></button>
     <div class="container">
  
   <!-- Trigger the modal with a button -->
 
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Profile</button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Constituent Succesfully Added! </h4>
-        </div>
-        <div class="modal-body">
-          <p>You may now check on the Profiling Tab</p>
-        </div>
-        <div class="modal-footer">
-          <br>
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
   
-</div>
 <br><br>
 </body>
-    <button type="button" class="btn btn-primary btn-lg">Clear Fields</button>
-    <button type="button" class="btn btn-Warning btn-lg"><a href="Maintenance.html">Back to Maintenance</a></button>
+    
 </div>
 
 
