@@ -165,14 +165,14 @@
 
 
     <div class="col-lg-12">
-  <img style="float:right" 
-    src="C:\Users\BOE\Desktop\boots\startbootstrap-sb-admin-gh-pages\logos.png" alt="logo" height="200" width="200" class="pull-right img-responsive">  
-    
+ <!-- <img style="float:right" 
+     src="C:\Users\BOE\Desktop\boots\startbootstrap-sb-admin-gh-pages\logos.png" alt="logo" height="200" width="200" class="pull-right img-responsive">  
+    -->
             <div class="container">
   <div class="jumbotron">
     <div class="col-lg-12"> 
     
-  <img style="float:center"src="C:\Users\BOE\Desktop\boots\startbootstrap-sb-admin-gh-pages\person.png"  class="img-thumbnail" alt="Trulli" width="250" height="250"> 
+  <h2>ADD PROFILE</h2> 
 <br>
 <br>
   
@@ -185,15 +185,18 @@
   </p>
      </p>                                
     <div class="form-group row">
-      <div class="col-lg-4">
-        Last Name: <input name="last_name" type="text">
-      </div>
-      <div class="col-lg-4">
-        First Name: <input name="first_name" type="text">
-      </div>
-      <div class="col-lg-4">
-        First Name: <input name="first_name" type="text">
-      </div>
+      <div class="col-lg-12">
+        <label for="ex3">Last Name</label>
+        <input name="last_name" class="form-control" id="ex3" type="text">
+   </div>
+      <div class="col-lg-12">
+        <label for="ex3">First Name</label>
+        <input name="first_name" class="form-control" id="ex3" type="text">
+   </div>
+      <div class="col-lg-12">
+        <label for="ex3">Middle Name</label>
+        <input name="middle_name" class="form-control" id="ex3" type="text">
+   </div>
     <div class="col-lg-4">
         <label>Gender:</label><br>
         <input type="radio" name="gender" value="m" checked> Male<br></br>
@@ -203,8 +206,10 @@
   <br>
   <form action="/action_page.php">
         Birthdate: <input type="date" name="birth_date">
+        <br>
 
 </div>
+<br>
 <br>
 <br>
    <div class="col-lg-12">
@@ -213,7 +218,7 @@
    </div>
 <div class="col-lg-12">
         <label for="ex3">Birth Place</label>
-        <input name="Birthplace" class="form-control" id="ex3" type="text">
+        <input name="birth_place" class="form-control" id="ex3" type="text">
    </div>
 
 

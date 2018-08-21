@@ -37,14 +37,7 @@
       </button>
 
       <!-- Navbar Search -->
-      <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-        <div class="input-group">
-         
-          </div>
-        </div>
-      </form>
-
-      <!-- Navbar -->
+        <!-- Navbar -->
       <ul class="navbar-nav ml-auto ml-md-0">
         <li class="nav-item dropdown no-arrow mx-1">
           <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -75,8 +68,8 @@
             <i class="fas fa-user-circle fa-fw"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-            <a class="dropdown-item" href="#">Settings</a>
-            <a class="dropdown-item" href="#">Activity Log</a>
+            <a class="dropdown-item" href="Maintenance.html">Settings</a>
+            
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
           </div>
@@ -159,106 +152,110 @@
 
         <div class="container-fluid">
 
+
           <!-- Breadcrumbs-->
   </li>
   <di class="container">
 
-
+  <div class="jumbotron">
     <div class="col-lg-12">
-  <img style="float:right" 
-    src="C:\Users\BOE\Desktop\boots\startbootstrap-sb-admin-gh-pages\logos.png" alt="logo" height="200" width="200" class="pull-right img-responsive">  
+    <img style="float:right" 
+    src="C:\Users\BOE\Desktop\boots\startbootstrap-sb-admin-gh-pages\logos.png" alt="logo" width="20%" class="pull-right img-responsive">
+
+       <div class="content-heading"><h1>Constituent Profile</h1></div>  
     
             <div class="container">
   <div class="jumbotron">
     <div class="col-lg-12"> 
-    
-  <img style="float:center"src="C:\Users\BOE\Desktop\boots\startbootstrap-sb-admin-gh-pages\person.png"  class="img-thumbnail" alt="Trulli" width="250" height="250"> 
-<br>
-<br>
-  
-    <form action="connection1.php" method="POST">
-<p>
-  Resident ID: <input name="resident_ID" type="text">
+         <br>
+         <br>
 
-  Contact No.: <input name="contact_no" type="text">
+  <br>
+  <br>
+  <img style="float:center"src="C:\Users\BOE\Documents\a\Chris-Brown-827x620.jpg"  class="img-thumbnail" alt="Trulli" width="250" height="250"> 
+<br>
+<br>
+  <div class="form-group row">
+<p>
+  Resident ID: <input type="text">
+
+  Contact No.: <input type="text">
 </div>
   </p>
      </p>                                
     <div class="form-group row">
       <div class="col-lg-4">
-        Last Name: <input name="last_name" type="text">
+        <label for="ex1">Last Name</label>
+        <input class="form-control" id="ex1" type="text">
       </div>
       <div class="col-lg-4">
-        First Name: <input name="first_name" type="text">
+        <label for="ex2">First Name</label>
+        <input class="form-control" id="ex2" type="text">
       </div>
       <div class="col-lg-4">
-        First Name: <input name="first_name" type="text">
-      </div>
-    <div class="col-lg-4">
-        <label>Gender:</label><br>
-        <input type="radio" name="gender" value="m" checked> Male<br></br>
-        <input type="radio" name="gender" value="f"> Female<br></br>
-    </div>
-    <div class="col-lg-12">
-  <br>
-  <form action="/action_page.php">
-        Birthdate: <input type="date" name="birth_date">
+        <label for="ex3">Middle Initial</label>
 
-</div>
-<br>
-<br>
+        <input class="form-control" id="ex3" type="text">
+   </div>
    <div class="col-lg-12">
         <label for="ex3">Home Address</label>
-        <input name="address" class="form-control" id="ex3" type="text">
+
+        <input class="form-control" id="ex3" type="text">
    </div>
+
+
 <div class="col-lg-12">
+
         <label for="ex3">Birth Place</label>
-        <input name="Birthplace" class="form-control" id="ex3" type="text">
+    
+        <input class="form-control" id="ex3" type="text">
    </div>
+   <p>
+   <div class="col-lg-12">
+  <br>
+  <form action="/action_page.php">
+        Birthdate: <input type="date" name="bday">
 
-
-   
+</div><br>
 
 <div class="container">
 
-
+</form>
 
  <div class="form-group row">
       <div class="col-lg-4">
         <label for="ex1">Religion</label>
-        <input name="religion" class="form-control" id="ex2" type="text">
+        <input class="form-control" id="ex2" type="text">
       </div>
       <div class="col-lg-4">
         <label for="ex2">Civil Status</label>
-        <input name="civil_status" class="form-control" id="ex2" type="text">
+        <input class="form-control" id="ex2" type="text">
       </div>
       
       <div class="col-lg-4">
         <label for="ex2">Educational Attainment</label>
-        <input name="educ_attain" class="form-control" id="ex2" type="text">
+        <input class="form-control" id="ex2" type="text">
       </div>
-      <div class="col-lg-8">
+      <div class="col-lg-12">
         <label for="ex3">Email Adress:</label>
-        <input name="email_add" class="form-control" id="ex3" type="text">
-      </div>
+        <input class="form-control" id="ex3" type="text">
+   </div>
    <div class="col-lg-4">
         <label for="ex2">Occupation</label>
-        <input name="occupation" class="form-control" id="ex2" type="text">
+        <input class="form-control" id="ex2" type="text">
       </div>
       <div class="col-lg-4">
         <label for="ex2">Citizenship</label>
-        <input name="citizenship" class="form-control" id="ex2" type="text">
-        <br><br>
+        <input class="form-control" id="ex2" type="text">
+      </div>
+     
 
- <td><input type="submit" name="submit" value="save data"></td>
+</div></div></div></br></br></br>
+          </ol>
 
-</br></br></br>
-        </div>
 
-<div class="container">
-    <button type="button" class="btn btn-Warning btn-lg"><a href="Maintenance.html">Back to Maintenance</a></button>
-    <div class="container">
- 
+<button><a href="searchprof.html">Back to Search</a></button>
+  
 
 
 
@@ -274,7 +271,10 @@
         <!-- /.container-fluid -->
 
         <!-- Sticky Footer -->
-        
+        <footer class="sticky-footer">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+            
             </div>
           </div>
         </footer>

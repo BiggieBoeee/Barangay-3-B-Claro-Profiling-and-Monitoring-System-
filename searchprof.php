@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Barangay 3-B Claro </title>
+    <title>Barangay 3-B Claro Profiling</title>
 
     <!-- Bootstrap core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,8 +29,7 @@
 
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-      <a class="navbar-brand mr-1" href="index.html">Barangay 3-B Claro</a>
-      <img src="C:\Users\BOE\Desktop\boots\startbootstrap-sb-admin-gh-pages\seal1.png" alt="logo" />
+      <a class="navbar-brand mr-1" href="index.html">Start Bootstrap</a>
 
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
@@ -38,11 +37,7 @@
 
       <!-- Navbar Search -->
       <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-        <div class="input-group">
-         
-          </div>
-        </div>
-      </form>
+       
 
       <!-- Navbar -->
       <ul class="navbar-nav ml-auto ml-md-0">
@@ -88,7 +83,7 @@
     <div id="wrapper">
 
       <!-- Sidebar -->
-      <ul class="sidebar navbar-nav">
+       <ul class="sidebar navbar-nav">
         <li class="nav-item active">
           <a class="nav-link" href="index.html">
             <i class="fa fa-home" style="font-size:24px"></i>
@@ -159,122 +154,80 @@
 
         <div class="container-fluid">
 
-          <!-- Breadcrumbs-->
-  </li>
-  <di class="container">
 
 
-    <div class="col-lg-12">
-  <img style="float:right" 
-    src="C:\Users\BOE\Desktop\boots\startbootstrap-sb-admin-gh-pages\logos.png" alt="logo" height="200" width="200" class="pull-right img-responsive">  
-    
-            <div class="container">
-  <div class="jumbotron">
-    <div class="col-lg-12"> 
-    
-  <img style="float:center"src="C:\Users\BOE\Desktop\boots\startbootstrap-sb-admin-gh-pages\person.png"  class="img-thumbnail" alt="Trulli" width="250" height="250"> 
-<br>
-<br>
+          <!-- Page Content -->
+
   
-    <form action="connection1.php" method="POST">
-<p>
-  Resident ID: <input name="resident_ID" type="text">
+  <head>
+    <table class="table">
+      <thead>
+        <tr>
+        <th> Last Name </th>
+        <th> First Name </th>
+        <th> Constituent ID:</th>
+      </tr>
+      </thead>
+     
+</tbody>
 
-  Contact No.: <input name="contact_no" type="text">
-</div>
-  </p>
-     </p>                                
-    <div class="form-group row">
-      <div class="col-lg-4">
-        Last Name: <input name="last_name" type="text">
-      </div>
-      <div class="col-lg-4">
-        First Name: <input name="first_name" type="text">
-      </div>
-      <div class="col-lg-4">
-        First Name: <input name="first_name" type="text">
-      </div>
-    <div class="col-lg-4">
-        <label>Gender:</label><br>
-        <input type="radio" name="gender" value="m" checked> Male<br></br>
-        <input type="radio" name="gender" value="f"> Female<br></br>
-    </div>
-    <div class="col-lg-12">
-  <br>
-  <form action="/action_page.php">
-        Birthdate: <input type="date" name="birth_date">
+<?php
 
-</div>
-<br>
-<br>
-   <div class="col-lg-12">
-        <label for="ex3">Home Address</label>
-        <input name="address" class="form-control" id="ex3" type="text">
-   </div>
-<div class="col-lg-12">
-        <label for="ex3">Birth Place</label>
-        <input name="Birthplace" class="form-control" id="ex3" type="text">
-   </div>
+$connections = mysqli_connect("localhost","root","","barangaysystem");
+$result = mysqli_query($connections, "SELECT * FROM tblresident");
 
+while ($row = mysqli_fetch_assoc($result)):
 
-   
+?>
 
-<div class="container">
+<tr> 
 
+  <td><?php echo $row['last_name']?></td>
+  <td><?php echo $row['first_name']?></td>
+  <td><?php echo $row['resident_ID']?></td>
+</tr>
 
+<?php endwhile; ?>
+</body>
+  </table>
 
- <div class="form-group row">
-      <div class="col-lg-4">
-        <label for="ex1">Religion</label>
-        <input name="religion" class="form-control" id="ex2" type="text">
-      </div>
-      <div class="col-lg-4">
-        <label for="ex2">Civil Status</label>
-        <input name="civil_status" class="form-control" id="ex2" type="text">
-      </div>
-      
-      <div class="col-lg-4">
-        <label for="ex2">Educational Attainment</label>
-        <input name="educ_attain" class="form-control" id="ex2" type="text">
-      </div>
-      <div class="col-lg-8">
-        <label for="ex3">Email Adress:</label>
-        <input name="email_add" class="form-control" id="ex3" type="text">
-      </div>
-   <div class="col-lg-4">
-        <label for="ex2">Occupation</label>
-        <input name="occupation" class="form-control" id="ex2" type="text">
-      </div>
-      <div class="col-lg-4">
-        <label for="ex2">Citizenship</label>
-        <input name="citizenship" class="form-control" id="ex2" type="text">
-        <br><br>
+<!-- Bootstrap core CSS-->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+<!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
- <td><input type="submit" name="submit" value="save data"></td>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-</br></br></br>
-        </div>
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
 
-<div class="container">
-    <button type="button" class="btn btn-Warning btn-lg"><a href="Maintenance.html">Back to Maintenance</a></button>
-    <div class="container">
- 
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+
+    <!-- Demo scripts for this page-->
+    <script src="js/demo/datatables-demo.js"></script>
+    <script src="js/demo/chart-area-demo.js"></script>
+
+<script src="C:/2-xampp/htdocs/jquery"></script>
+<script src="C:/2-xampp/htdocs/jquery.dataTables"></script>
+<script src="C:/2-xampp/htdocs/dataTables.bootstrap"></script>
 
 
+    <script>
+      $(".table").DataTable();
+    </script>
 
-
-          <!-- Icon Cards-->
-          
-
-          <!-- Area Chart Example-->
-          
-
-          <!-- DataTables Example -->
-          
         <!-- /.container-fluid -->
 
         <!-- Sticky Footer -->
-        
+        <footer class="sticky-footer">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright © Your Website 2018</span>
             </div>
           </div>
         </footer>
@@ -316,17 +269,8 @@
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Page level plugin JavaScript-->
-    <script src="vendor/chart.js/Chart.min.js"></script>
-    <script src="vendor/datatables/jquery.dataTables.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
-
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin.min.js"></script>
-
-    <!-- Demo scripts for this page-->
-    <script src="js/demo/datatables-demo.js"></script>
-    <script src="js/demo/chart-area-demo.js"></script>
 
   </body>
 

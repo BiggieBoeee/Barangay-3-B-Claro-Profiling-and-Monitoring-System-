@@ -1,5 +1,4 @@
 <?php
-
 $servername = "localhost";
 $dbUsername = "root";
 $dbPassword = "";
@@ -24,7 +23,7 @@ $citizenship = $_POST['citizenship'];
 
 	//connection on db
 
-	$conn = new mysqli($servername, $dbUsername, $dbPassword, $dbname);
+	$conn = new mysqli($servername, $dbUsername, $dbPassword, $dbname)
 	
 	//check connection
 
@@ -50,7 +49,6 @@ $citizenship = $_POST['citizenship'];
 	}
 
 	$sql = "INSERT INTO tblresident (last_name,first_name, middle_name, gender, contact_no, address, birth_place, birth_date, religion, civil_status, occupation, citizenship, email_add, educ_attain)
-
 	VALUES ('$contact_no', '$last_name', '$first_name', '$middle_name', '$gender', '$birth_date', '$address', '$birth_place', '$religion', '$civil_status', '$occupation', '$citizenship', '$email_add', '$educ_attain')";
 
 	if ($conn->query($sql) === TRUE  ) {
@@ -61,7 +59,7 @@ $citizenship = $_POST['citizenship'];
 
 	}
 
-$conn->close();
+$conn->close()
 
 
 

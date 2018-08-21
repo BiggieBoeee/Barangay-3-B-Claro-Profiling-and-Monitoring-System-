@@ -160,100 +160,12 @@
         <div class="container-fluid">
 
           <!-- Breadcrumbs-->
-  </li>
-  <di class="container">
 
-
-    <div class="col-lg-12">
-  <img style="float:right" 
-    src="C:\Users\BOE\Desktop\boots\startbootstrap-sb-admin-gh-pages\logos.png" alt="logo" height="200" width="200" class="pull-right img-responsive">  
-    
-            <div class="container">
-  <div class="jumbotron">
-    <div class="col-lg-12"> 
-    
-  <img style="float:center"src="C:\Users\BOE\Desktop\boots\startbootstrap-sb-admin-gh-pages\person.png"  class="img-thumbnail" alt="Trulli" width="250" height="250"> 
-<br>
-<br>
-  
-    <form action="connection1.php" method="POST">
-<p>
-  Resident ID: <input name="resident_ID" type="text">
-
-  Contact No.: <input name="contact_no" type="text">
-</div>
-  </p>
-     </p>                                
-    <div class="form-group row">
-      <div class="col-lg-4">
-        Last Name: <input name="last_name" type="text">
-      </div>
-      <div class="col-lg-4">
-        First Name: <input name="first_name" type="text">
-      </div>
-      <div class="col-lg-4">
-        First Name: <input name="first_name" type="text">
-      </div>
-    <div class="col-lg-4">
-        <label>Gender:</label><br>
-        <input type="radio" name="gender" value="m" checked> Male<br></br>
-        <input type="radio" name="gender" value="f"> Female<br></br>
-    </div>
-    <div class="col-lg-12">
-  <br>
-  <form action="/action_page.php">
-        Birthdate: <input type="date" name="birth_date">
-
-</div>
-<br>
-<br>
-   <div class="col-lg-12">
-        <label for="ex3">Home Address</label>
-        <input name="address" class="form-control" id="ex3" type="text">
-   </div>
-<div class="col-lg-12">
-        <label for="ex3">Birth Place</label>
-        <input name="Birthplace" class="form-control" id="ex3" type="text">
-   </div>
 
 
    
 
-<div class="container">
 
-
-
- <div class="form-group row">
-      <div class="col-lg-4">
-        <label for="ex1">Religion</label>
-        <input name="religion" class="form-control" id="ex2" type="text">
-      </div>
-      <div class="col-lg-4">
-        <label for="ex2">Civil Status</label>
-        <input name="civil_status" class="form-control" id="ex2" type="text">
-      </div>
-      
-      <div class="col-lg-4">
-        <label for="ex2">Educational Attainment</label>
-        <input name="educ_attain" class="form-control" id="ex2" type="text">
-      </div>
-      <div class="col-lg-8">
-        <label for="ex3">Email Adress:</label>
-        <input name="email_add" class="form-control" id="ex3" type="text">
-      </div>
-   <div class="col-lg-4">
-        <label for="ex2">Occupation</label>
-        <input name="occupation" class="form-control" id="ex2" type="text">
-      </div>
-      <div class="col-lg-4">
-        <label for="ex2">Citizenship</label>
-        <input name="citizenship" class="form-control" id="ex2" type="text">
-        <br><br>
-
- <td><input type="submit" name="submit" value="save data"></td>
-
-</br></br></br>
-        </div>
 
 <div class="container">
     <button type="button" class="btn btn-Warning btn-lg"><a href="Maintenance.html">Back to Maintenance</a></button>
